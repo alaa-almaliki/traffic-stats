@@ -1,0 +1,3 @@
+# Generated badges — served from Pages via the workflow's artifact upload, never
+# committed. Only data/ (the durable, recoverable all-time store) is versioned.
+/public/*.json

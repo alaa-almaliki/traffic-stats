@@ -1,0 +1,7 @@
+# Repos to track — one "owner/repo" per line. '#' comments and blank lines ignored.
+# The badge file is named after the repo (the part after '/'), so its Pages URL is
+#   https://<owner>.github.io/traffic-stats/<repo>.json
+# (If you ever track two different owners' repos that share a name, they'd collide
+#  on the badge filename — rename one via a separate collector, or namespace it.)
+alaa-almaliki/harbor
+alaa-almaliki/seed

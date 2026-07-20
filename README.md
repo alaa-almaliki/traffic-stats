@@ -42,13 +42,13 @@ repos.txt ──► scripts/collect.sh ──► data/<owner>__<repo>.json   (co
    gh secret set TRAFFIC_TOKEN
    ```
 
-3. **Enable Pages from Actions.** Repo → **Settings → Pages → Build and
-   deployment → Source: GitHub Actions**. (No branch to pick — the workflow
-   deploys an artifact.)
-
-4. **First run.** Actions → *Traffic — collect clone stats* → **Run workflow**.
-   It commits the first `data/` snapshot and deploys the badges. Your badges are
-   then live at:
+3. **First run.** Actions → *Traffic — collect clone stats* → **Run workflow**.
+   The workflow **enables Pages itself** on the first run (`configure-pages`'s
+   `enablement: true`), commits the first `data/` snapshot, and deploys the
+   badges — no manual Settings toggle. (If it ever reports "Get Pages site
+   failed", the repo's plan doesn't allow Actions-built Pages — a private repo
+   needs GitHub Pro/Team; a public repo works free.) Your badges are then live
+   at:
    ```
    https://<owner>.github.io/traffic-stats/<repo>.json
    ```
